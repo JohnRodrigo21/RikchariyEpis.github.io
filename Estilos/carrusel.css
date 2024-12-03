@@ -1,0 +1,31 @@
+/* Estilos modificables de la sección carrusel */
+section.carrusel {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del carrusel */
+section.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.carrusel-img {
+    width: 100%;
+    max-width: 500px;
+    min-height: 350px;
+    height: auto;
+    max-height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Opcional para ajustar en dispositivos pequeños */
+@media (max-width: 700px) {
+    .carrusel-img {
+        width: 100%;
+    }
+}
